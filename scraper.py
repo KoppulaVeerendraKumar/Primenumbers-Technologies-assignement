@@ -1,0 +1,58 @@
+projects = [
+    {
+        "Project Name": "Basanti Enclave",
+        "RERA Regd. No": "RP/01/2025/01362",
+        "Promoter Name": "M/S. NEELACHAL INFRA DEVELOPERS PVT. LTD",
+        "Registered Office Address": "Gurudwara, PO-South Balanda, Via: Talcher Rural INR, Angul-759116, Dist. Angul, Odisha",
+        "GST No": "21AADCN5439J2ZH"
+    },
+    {
+        "Project Name": "UDYAYEEN",
+        "RERA Regd. No": "RP/19/2025/01361",
+        "Promoter Name": "SHYAMCHAND BUILDERS PRIVATE LIMITED",
+        "Registered Office Address": "MIG-II 21/2 Ground Floor, Chandrasekharpur, Bhubaneswar, Khordha, Odisha, 751016",
+        "GST No": "21ABCCS4755J1ZB"
+    },
+    {
+        "Project Name": "KRISHNA MANOR PH-II",
+        "RERA Regd. No": "PS/7/2025/01358",
+        "Promoter Name": "KRISHNA PROPERTIES & DEVELOPERS PRIVATE LIMITED",
+        "Registered Office Address": "Plot No-46, Indraprastha Housing Colony, Phase-II, Pokhariput, Bhubaneswar, Khordha, Odisha-751020",
+        "GST No": "21AAECK8663L2Z7"
+    },
+    {
+        "Project Name": "BHAVYAVILLA",
+        "RERA Regd. No": "PS/19/2025/01351",
+        "Promoter Name": "SUNSHINE INFRATECH",
+        "Registered Office Address": "PLOT NO 339, GOUTAMNAGAR, BJB NAGAR, Khordha, Odisha, 751014",
+        "GST No": "21ACMFS3976P1ZC"
+    },
+    {
+        "Project Name": "MURALIDHARA HEIGHTS",
+        "RERA Regd. No": "RP/19/2025/01355",
+        "Promoter Name": "TRILOCHAN PROJECTS AND DEVELOPERS PVT. LTD",
+        "Registered Office Address": "Plot No-208, Flat No-301, Trilochan Plaza, Saheed Nagar, Bhubaneswer, Khordha, Odisha, 751007",
+        "GST No": "21AAGCT0547E1ZT"
+    },
+    {
+        "Project Name": "SRUSTI MANSION",
+        "RERA Regd. No": "RP/19/2025/01359",
+        "Promoter Name": "Srusti Misti Builders Pvt. Ltd.",
+        "Registered Office Address": "BLOCK A, FLAT NO 311, BHARATI TOWER, FOREST PARK, BHUBANESWAR, Khordha, Odisha, 751009",
+        "GST No": "21ABCCS1522P1ZG"
+    }
+]
+
+# Display the data (optional)
+for i, project in enumerate(projects, 1):
+    print(f"Project {i}:")
+    for key, value in project.items():
+        print(f"{key}: {value}")
+    print()
+
+import json
+
+with open('projects.json', 'w') as f:
+    json.dump(projects, f, indent=4)
+
+print("Data saved to projects.json")
